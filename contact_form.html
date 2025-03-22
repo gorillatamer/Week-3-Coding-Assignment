@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="bg-secondary">
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Week 3 Coding Project</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact_form.html">Contact</a>
+                        </li>                
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <form class="mt-5 mb-3 bg-light text-dark p-4 rounded-3">
+            <div class="mb-3">
+            <label for="userEmail" class="form-label">Email address:</label>
+            <input type="email" class="form-control bg-white text-dark border-dark" id="userEmail" name="userEmail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Enter your preferred contact email address.</div>
+            </div>
+            <div class="mb-3">
+            <label for="emailSubject" class="form-label">Subject:</label>
+            <input type="text" class="form-control bg-white text-dark border-dark" id="emailSubject" name="emailSubject">
+            </div>
+            <div class="mb-3">
+                <label for="emailBody" class="form-label">Describe your request:</label>
+                <textarea class="form-control bg-white text-dark border-dark" id="emailBody" name="emailBody" rows="5"></textarea>
+            </div>
+            <div class="mb-3 form-check form-switch">
+            <input type="checkbox" class="form-check-input bg-secondary border-dark" id="replyCheck" name="replyCheck">
+            <label class="form-check-label" for="replyCheck">Would you like a reply?</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
