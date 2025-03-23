@@ -1,21 +1,39 @@
+<!-- Bootstrap Website - Week 3 FE -->
+
+<!-- Create a new website using HTML and Bootstrap. 
+The website must include the following:	
+        At least 2 pages.
+        A Bootstrap navbar, table, and form.
+        Bootstrap grid used throughout to format elements
+        Elements should stack vertically when the window is small -->
+
+<!-- HTML boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <!-- This is the link to the Bootstrap resource nodes -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
+<!-- This class sets the background color for the page -->
 <body class="bg-secondary">
-    <div>
+        <!-- This class creates the navbar and expands it as long as the screen size is larger than sm and 
+         sets the navbar style and background to dark -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- This class allows the container to react to screen size changes -->            
             <div class="container-fluid">
+                <!-- This sets the logo or brand name with navbar-brand styling it  -->
                 <a class="navbar-brand" href="index.html">Week 3 Coding Project</a>
+                <!-- This class creates a button when the screen size is too small and allows toggling a dropdown -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- This is the collapsable part of the navbar with links aligned to the right end -->
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
+                        <!-- These are the navbars with 'active' denoting which page the user is currently on -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -26,12 +44,15 @@
                 </div>
             </div>
         </nav>
-    </div>
-
+    <!-- This is the main container for the page -->
     <div class="container">
+        <!-- This class sets the style for the form with a top margin of 5 a bottom margin of 3, rounded corners
+         and dark Bootstrap style -->
         <form class="mt-5 mb-3 bg-light text-dark p-4 rounded-3">
+            <!-- This class adds additional padding for the form within the container -->
             <div class="mb-3">
             <label for="userEmail" class="form-label">Email address:</label>
+            <!-- This class styles the form fields with a white background and dark border for added contrast -->
             <input type="email" class="form-control bg-white text-dark border-dark" id="userEmail" name="userEmail" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">Enter your preferred contact email address.</div>
             </div>
@@ -43,6 +64,7 @@
                 <label for="emailBody" class="form-label">Describe your request:</label>
                 <textarea class="form-control bg-white text-dark border-dark" id="emailBody" name="emailBody" rows="5"></textarea>
             </div>
+            <!-- This class styles the checkbox as a switch with a bottom of 3 -->
             <div class="mb-3 form-check form-switch">
             <input type="checkbox" class="form-check-input bg-secondary border-dark" id="replyCheck" name="replyCheck">
             <label class="form-check-label" for="replyCheck">Would you like a reply?</label>
@@ -50,7 +72,7 @@
             <button type="submit" class="btn btn-dark">Submit</button>
         </form>
     </div>
-
+    <!-- This is the required javascript script for Bootstrap -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
